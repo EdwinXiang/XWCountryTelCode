@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "TYCoutryModel.h"
+#import "TYTextField.h"
+#import "TYCustomTextField.h"
 #import "TYCountryViewController.h"
 //屏幕宽度
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -133,7 +135,7 @@
     [self.topBgView addSubview:_countryNameLabel];
     
     //国家号码编号
-    _teleIdField = [[UITextField alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_topBgView.frame),ScreenWidth/6 , ScreenHeight*162/2/1104)];
+    _teleIdField = [[TYCustomTextField alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_topBgView.frame),ScreenWidth/6 , ScreenHeight*162/2/1104)];
     _teleIdField.backgroundColor = [UIColor whiteColor];
     _teleIdField.borderStyle = UITextBorderStyleNone;
     _teleIdField.textAlignment = NSTextAlignmentLeft;
@@ -155,7 +157,7 @@
     [_teleIdField addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.view addSubview:_teleIdField];
     //输入电话号码
-    _teleTextField = [[UITextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teleIdField.frame)+1, CGRectGetMaxY(_topBgView.frame),ScreenWidth-ScreenWidth/6, ScreenHeight*162/2/1104)];
+    _teleTextField = [[TYTextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_teleIdField.frame)+1, CGRectGetMaxY(_topBgView.frame),ScreenWidth-ScreenWidth/6, ScreenHeight*162/2/1104)];
     _teleTextField.borderStyle = UITextBorderStyleNone;
     _teleTextField.backgroundColor = [UIColor whiteColor];
     _teleTextField.textAlignment = NSTextAlignmentLeft;
@@ -172,7 +174,7 @@
     [self.view addSubview:_teleTextField];
     
     //密码
-    _passwordTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_teleTextField.frame),ScreenWidth , ScreenHeight*162/2/1104)];
+    _passwordTextField = [[TYTextField alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_teleTextField.frame),ScreenWidth , ScreenHeight*162/2/1104)];
     _passwordTextField.borderStyle = UITextBorderStyleRoundedRect;
     _passwordTextField.textAlignment = NSTextAlignmentLeft;
     _passwordTextField.placeholder = @"请输入新密码";

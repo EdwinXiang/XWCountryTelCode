@@ -18,6 +18,8 @@
 		CE9C12B41C321E7D0041C677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C12A71C321E7D0041C677 /* main.m */; };
 		CE9C12B51C321E7D0041C677 /* TYCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C12AB1C321E7D0041C677 /* TYCountryViewController.m */; };
 		CE9C12B61C321E7D0041C677 /* TYCoutryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C12AE1C321E7D0041C677 /* TYCoutryModel.m */; };
+		CE9FCFCD1C48D81300E128C5 /* TYCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FCFCA1C48D81300E128C5 /* TYCustomTextField.m */; };
+		CE9FCFCE1C48D81300E128C5 /* TYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FCFCC1C48D81300E128C5 /* TYTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		CE9C12AB1C321E7D0041C677 /* TYCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCountryViewController.m; sourceTree = "<group>"; };
 		CE9C12AD1C321E7D0041C677 /* TYCoutryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCoutryModel.h; sourceTree = "<group>"; };
 		CE9C12AE1C321E7D0041C677 /* TYCoutryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCoutryModel.m; sourceTree = "<group>"; };
+		CE9FCFC91C48D81300E128C5 /* TYCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCustomTextField.h; sourceTree = "<group>"; };
+		CE9FCFCA1C48D81300E128C5 /* TYCustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCustomTextField.m; sourceTree = "<group>"; };
+		CE9FCFCB1C48D81300E128C5 /* TYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTextField.h; sourceTree = "<group>"; };
+		CE9FCFCC1C48D81300E128C5 /* TYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,10 @@
 		CE9C129F1C321E7D0041C677 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				CE9FCFC91C48D81300E128C5 /* TYCustomTextField.h */,
+				CE9FCFCA1C48D81300E128C5 /* TYCustomTextField.m */,
+				CE9FCFCB1C48D81300E128C5 /* TYTextField.h */,
+				CE9FCFCC1C48D81300E128C5 /* TYTextField.m */,
 				CE9C12A01C321E7D0041C677 /* ChineseToPinyin.h */,
 				CE9C12A11C321E7D0041C677 /* ChineseToPinyin.m */,
 			);
@@ -223,6 +233,8 @@
 				CE9C12901C321E1E0041C677 /* ViewController.m in Sources */,
 				CE9C12B01C321E7D0041C677 /* ChineseToPinyin.m in Sources */,
 				CE9C12B41C321E7D0041C677 /* main.m in Sources */,
+				CE9FCFCD1C48D81300E128C5 /* TYCustomTextField.m in Sources */,
+				CE9FCFCE1C48D81300E128C5 /* TYTextField.m in Sources */,
 				CE9C12B11C321E7D0041C677 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "$(SRCROOT)/XWCountryTelCode/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Edwin.hxl.XWCountryTelCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -347,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "$(SRCROOT)/XWCountryTelCode/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Edwin.hxl.XWCountryTelCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
